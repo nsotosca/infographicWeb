@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>infografia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="inf-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,900" rel="stylesheet">
+</head>
+<body>
+    <div class="inf-content">
+        <div class="inf-grid">
+            <div class="inf-column">
+                <div class="inf-circle inf-left" id="inf-review"> 
+                    <i class="fas fa-info inf-left"></i>
+                    <div class="inf-text"></div>
+                </div>
+            </div>
+            <div class="inf-column inf-left">
+                <div class="inf-arrow-left"></div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-tittle inf-left">RESEÑA</div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-tittle inf-right">PERSONAJES</div>
+            </div>
+            <div class="inf-column inf-right">
+                    <div class="inf-arrow-right"></div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-circle inf-right" id="inf-characters">
+                    <i class="fas fa-users inf-right"></i>
+                    <div class="inf-characters"></div>
+                </div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-circle inf-left" id="inf-gameplay">
+                    <i class="fab fa-youtube inf-left"></i>
+                </div>
+            </div>
+            <div class="inf-column inf-left">
+                    <div class="inf-arrow-left"></div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-tittle inf-left">GAMEPLAY</div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-tittle inf-right">IMAGENES</div>
+            </div>
+            <div class="inf-column inf-right">
+                    <div class="inf-arrow-right"></div>
+            </div>
+            <div class="inf-column">
+                <div class="inf-circle inf-right" id="inf-images">
+                    <i class="fas fa-images inf-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="inf-popup">
+            <div class="content">
+                <div id="review"></div>
+                <div id="characters"></div>
+                <div id="gameplay"></div>
+                <div id="images"></div>
+        </div>
+    </div>
+    <script>
+        var character = [ {
+            "name" : "Pepe",
+            "img" : "char1.jpg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat!Lorem ",
+            }, { 
+            "name" : "Jose",
+            "img" : "char2.jpg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat!Lorem ",
+            } ];
+ 
+
+        for (i = 0; i < character.length; i++){
+            console.log( character[i].name );
+        }
+
+
+        var bgImg = 'tumblr_oeegh7Rteh1uigp6ho1_1280-1-e1526851079146.jpg';
+        var reviewImg = 'GODDAMn_1440x600_acf_cropped-1440x450.jpg';
+        var reviewText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat! <hr> min-height: 20rem;<hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt sint sit at aliquam pariatur mollitia consequatur qui corrupti numquam placeat, quae odit quis hic quisquam a fugiat assumenda quaerat! ';
+        var characterImg = ['char1.jpg','char2.jpg','char3.jpg','char4.jpg'];
+        var characterName = ['Pepe','Jose','Juan','Pedro'];
+        var characterDescription = [reviewText,reviewText,reviewText,reviewText];
+        var gameplayUrl = ['Pepe','Jose','Juan','Pedro'];
+        var imageUrl = ['Pepe','Jose','Juan','Pedro'];
+                  
+    </script>     
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="inf.js"></script>
+</body>
+
+</html>
