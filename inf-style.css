@@ -86,7 +86,7 @@
 	height: 0; 
 	border-bottom: 10px solid transparent;  /* left arrow slant */
 	border-top: 10px solid transparent; /* right arrow slant */
-	border-right: 10px solid #81d742; /* bottom, add background color here */
+	/* border-right: 10px solid #81d742;  */
 	font-size: 0;
     line-height: 0;
     position:relative;
@@ -99,7 +99,7 @@
 	height: 0; 
 	border-bottom: 10px solid transparent;  /* left arrow slant */
 	border-top: 10px solid transparent; /* right arrow slant */
-	border-left: 10px solid #222; /* bottom, add background color here */
+	/* border-left: 10px solid #222;  */
 	font-size: 0;
     line-height: 0;
     position:relative;
