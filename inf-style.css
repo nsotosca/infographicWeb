@@ -108,12 +108,12 @@
 }
 
 .inf-left{
-    background-color: #81d742;
-    color:#222;
+    /* background-color:transparent;
+    color:transparent; */
 }
 .inf-right{
-    background-color: #222;
-    color: #81d742
+    /* background-color: #222;
+    color: #81d742 */
 }
 
 .inf-circle{
@@ -170,7 +170,7 @@
 }
 
 #inf-review:hover{
-    background-color:white;
+    background-color:white !important;
 }
 #inf-review:hover .inf-text{
     display:block;

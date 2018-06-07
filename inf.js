@@ -6,6 +6,18 @@ jQuery(document).ready(function(){
     var boxCharacters = jQuery('#inf-characters .inf-characters');
     var boxCircle = jQuery('.inf-circle');
 
+    //Colores
+    var arrowLeft = jQuery('.inf-content .inf-arrow-left');
+    var arrowRight = jQuery('.inf-content .inf-arrow-right');
+    var colorOdd = jQuery('.inf-content .inf-left');
+    var colorEven = jQuery('.inf-content .inf-right');
+   
+    arrowLeft.css({'border-right':'10px solid '+color1+''});
+    arrowRight.css({'border-right':'10px solid '+color2+''});
+
+    colorOdd.css({'background-color':''+color1+'','color':''+textColor1+''});
+    colorEven.css({'background-color':''+color2+'','color':''+textColor2+''});
+
     boxContent.css('background-image','url(http://www.lojueguito.com/wp-content/uploads/2018/05/'+bgImg+'');
 
     var clearP = jQuery('.inf-content p');    
