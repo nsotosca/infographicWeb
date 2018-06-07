@@ -21,7 +21,6 @@ jQuery(document).ready(function(){
     //funcion mostrar popup "review" ocultar grid
     
     function showPopup(){
-        boxContent.css('padding','0');
         boxPopup.css('padding','1rem');
         boxPopup.fadeToggle('display');
         boxGrid.fadeToggle('fast');

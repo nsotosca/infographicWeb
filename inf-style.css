@@ -1,7 +1,6 @@
 .inf-content{
     width: 50rem;
     height: 60rem;
-    padding: 1rem;
     background-size:cover; 
     background-position: center;
     box-sizing: unset !important;
@@ -278,4 +277,3 @@
 .inf-popup #images .img:hover{
     margin: 0.4rem;
 }
-/* los assets suelen ser, un video, imagenes concept, imagenes ingame y personajes */
