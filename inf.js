@@ -25,9 +25,9 @@ jQuery(document).ready(function(){
         boxPopup.css('padding','1rem');
         boxPopup.fadeToggle('display');
         boxGrid.fadeToggle('fast');
+        boxPopup.css({'display':'flex','align-items':'center'})
         return;
     }
-   
 
     boxCircle.click(function(){
         var idBoxCircle = jQuery(this).attr('id');
@@ -72,28 +72,9 @@ jQuery(document).ready(function(){
                 createGallery();
               }) 
             })   
-            centerPopup('#images');
             return
         }  
         
-        function centerPopup(id){
-            let content = '.inf-popup .content '+id;
-            let heightPopup = jQuery(content).height();
-            let heightContent = jQuery(boxContent).height();
-            console.log('popup antes de la division '+heightPopup);
-            console.log('contenedor general antes de la division '+heightContent);
-            heightPopup = heightPopup /2 + 19;
-            console.log('popup despues de la division '+heightPopup);
-            heightContent = heightContent / 2 - 16;
-            console.log('contenedor general despues de la division '+heightContent);
-            heightPopup = heightContent - heightPopup;
-            console.log('despues de restar uno con otro'+heightPopup);
-            console.log(id);
-            console.log(jQuery(content));
-            jQuery('.inf-popup .content').css({'top':''+heightPopup+'px'})
-            // heightPopup = 0;
-            return
-        }
         switch (idBoxCircle) {
             case 'inf-review':
                 if(!boxPopup.is(":visible")){
@@ -104,7 +85,6 @@ jQuery(document).ready(function(){
                     reviewPopup.append('<div class="img"><img src="http://www.lojueguito.com/wp-content/uploads/2018/05/'+reviewImg+'"/></div>');
                     reviewPopup.append('<div class="text">'+reviewText+'</div>');
                 }
-                centerPopup('#review');
                 break
             case 'inf-characters':
                 if(!boxPopup.is(":visible")){
@@ -117,7 +97,6 @@ jQuery(document).ready(function(){
                         charactersPopup.append('<div class="character"><div class="img"><img src="http://www.lojueguito.com/wp-content/uploads/2018/05/'+character[i].img+'" alt="'+character[i].name+'" title="'+character[i].name+'"/></div><div class="text"><h3>'+character[i].name+'</h3>'+character[i].description+'</div></div>');
                     }
                 }
-                centerPopup('#characters');
                 break
             case 'inf-gameplay':
                   if(!boxPopup.is(":visible")){
@@ -127,7 +106,6 @@ jQuery(document).ready(function(){
                     showPopup();
                     gameplayPopup.append('<iframe src="https://www.youtube.com/embed/'+gameplayUrl+'?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
                   }
-                  centerPopup('#gameplay');
                 break
             case 'inf-images':
                 if(!boxPopup.is(":visible")){
