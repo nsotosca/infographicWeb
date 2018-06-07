@@ -1,4 +1,6 @@
 jQuery(document).ready(function(){    
+    var clearP = jQuery('.inf-content p');    
+    clearP.remove();
     var reviewTextShort = reviewText.substr(0,120);
     var boxPopup =  jQuery('.inf-popup');
     var boxGrid = jQuery('.inf-grid');

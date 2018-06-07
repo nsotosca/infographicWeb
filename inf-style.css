@@ -184,8 +184,8 @@
 }
 .inf-popup{
     display: none;
-    width: 48rem;
-    height: 58rem;
+    width: 50rem;
+    height: 60rem;
     background-color: rgba(0,0,0,0.7);
     z-index: 999999;
 }
