@@ -1,6 +1,4 @@
 jQuery(document).ready(function(){    
-    var clearP = jQuery('.inf-content p');    
-    clearP.remove();
     var reviewTextShort = reviewText.substr(0,120);
     var boxPopup =  jQuery('.inf-popup');
     var boxGrid = jQuery('.inf-grid');
@@ -35,7 +33,6 @@ jQuery(document).ready(function(){
     //funcion mostrar popup "review" ocultar grid
     
     function showPopup(){
-        boxPopup.css('padding','1rem');
         boxPopup.fadeToggle('display');
         boxGrid.fadeToggle('fast');
         boxPopup.css({'display':'flex','align-items':'center'})

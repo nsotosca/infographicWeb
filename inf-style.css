@@ -194,6 +194,7 @@
     height: auto;
     max-height: 40rem;
     padding: 1rem;
+    margin:1rem;
     border: 0.5rem solid white;
     background-color: #fafafa;
     position: relative;
