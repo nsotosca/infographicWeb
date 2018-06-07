@@ -12,8 +12,8 @@ jQuery(document).ready(function(){
     var colorOdd = jQuery('.inf-content .inf-left');
     var colorEven = jQuery('.inf-content .inf-right');
    
-    arrowLeft.css({'border-right':'10px solid '+color1+''});
-    arrowRight.css({'border-right':'10px solid '+color2+''});
+    arrowLeft.css({'border-right':'10px solid '+color1});
+    arrowRight.css({'border-left':'10px solid '+color2});
 
     colorOdd.css({'background-color':''+color1+'','color':''+textColor1+''});
     colorEven.css({'background-color':''+color2+'','color':''+textColor2+''});
