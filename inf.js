@@ -149,5 +149,59 @@ jQuery(document).ready(function(){
             jQuery('.inf-popup .content div').empty();
         }            
     }) 
+
+    //Animacion de Titulos
+    jQuery(boxCircle).hover(function(){
+        var idBoxCircle = jQuery(this).attr('id');
+        var boxTittle;
+        var side;
+        switch (idBoxCircle) {
+            case 'inf-review':
+              boxTittle = jQuery('#inf-tittle-review');
+              side = 'right';
+            break
+            case 'inf-characters':
+              boxTittle = jQuery('#inf-tittle-characters');
+              side = 'left';
+            break
+            case 'inf-gameplay':
+              boxTittle = jQuery('#inf-tittle-gameplay');
+              side = 'right';
+            break
+            case 'inf-images':
+              boxTittle = jQuery('#inf-tittle-images');
+              side = 'left';
+            break
+            default:
+            break
+        }
+        boxTittle.removeClass('hide-'+side+'');
+        boxTittle.css('transform','translateX(0)');
+    },function(){
+        var idBoxCircle = jQuery(this).attr('id');
+        var boxTittle;
+        var side;
+        switch (idBoxCircle) {
+            case 'inf-review':
+              boxTittle = jQuery('#inf-tittle-review');
+              side = 'right';
+            break
+            case 'inf-characters':
+              boxTittle = jQuery('#inf-tittle-characters');
+              side = 'left';
+            break
+            case 'inf-gameplay':
+              boxTittle = jQuery('#inf-tittle-gameplay');
+              side = 'right';
+            break
+            case 'inf-images':
+              boxTittle = jQuery('#inf-tittle-images');
+              side = 'left';
+            break
+            default:
+            break
+        }
+        boxTittle.css('transform','translateX(400px)');
+    })
     
 })

@@ -4,6 +4,7 @@
     background-size:cover; 
     background-position: center;
     box-sizing: unset !important;
+    overflow: hidden;
 }
 .inf-content .shadow{ box-shadow: 0 0 1rem #222;}
 .inf-content a{
@@ -30,6 +31,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.inf-column:nth-child(3), .inf-column:nth-child(4), .inf-column:nth-child(9),.inf-column:nth-child(10){
+    overflow: hidden;
 }
 
 .inf-column:nth-child(1){
@@ -86,7 +90,6 @@
 	height: 0; 
 	border-bottom: 10px solid transparent;  /* left arrow slant */
 	border-top: 10px solid transparent; /* right arrow slant */
-	/* border-right: 10px solid #81d742;  */
 	font-size: 0;
     line-height: 0;
     position:relative;
@@ -99,21 +102,11 @@
 	height: 0; 
 	border-bottom: 10px solid transparent;  /* left arrow slant */
 	border-top: 10px solid transparent; /* right arrow slant */
-	/* border-left: 10px solid #222;  */
 	font-size: 0;
     line-height: 0;
     position:relative;
     left:10px;
     top: 50%;
-}
-
-.inf-left{
-    /* background-color:transparent;
-    color:transparent; */
-}
-.inf-right{
-    /* background-color: #222;
-    color: #81d742 */
 }
 
 .inf-circle{
@@ -122,7 +115,6 @@
     height: 7rem;
     padding: 0.5rem;
     border-radius: 50%;
-    transition: all .2s ease; 
     z-index: 10000;
     display: flex;
     justify-content: center;
@@ -131,8 +123,7 @@
     overflow: hidden;
     transition: transform 300ms;
 }
-.inf-circle i{ font-size: 2rem; background-color:transparent !important; margin-right: 0 !important;}
-.inf-circle svg{ font-size: 2rem; background-color:transparent !important; margin-right: 0 !important; }
+.inf-circle i, .inf-circle svg{ font-size: 2rem; background-color:transparent !important; margin-right: 0 !important;}
 
 .inf-text{
     display: none;
@@ -140,7 +131,14 @@
     font-size: 0.4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    transition: transform 1000ms;
 }
+.hide-left{position:relative;left:298px;transition: transform 1000ms;}
+.hide-right{position:relative;right:298px;transition: transform 1000ms;}
+
+/* .hide-left:hover, .hide-right:hover{
+    left:0;
+} */
 
 .inf-characters{display: none;}
 .inf-characters div{
@@ -162,10 +160,7 @@
     transform: scale(2,2)  rotate(1080deg);
     flex-flow: column;
 }
-.inf-circle:hover i{
-    font-size: 1rem;
-}
-.inf-circle:hover svg{
+.inf-circle:hover i, .inf-circle:hover svg{
     font-size: 1rem;
 }
 
