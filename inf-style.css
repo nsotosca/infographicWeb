@@ -14,7 +14,7 @@
 .inf-tittle{
     font-family: 'Titillium Web', sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0 0.5rem;
 }
 
@@ -131,10 +131,9 @@
     font-size: 0.4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    transition: transform 1000ms;
 }
-.hide-left{position:relative;left:298px;transition: transform 1000ms;}
-.hide-right{position:relative;right:298px;transition: transform 1000ms;}
+.hide-left{position:relative;left:298px; transition: left 300ms ease;}
+.hide-right{position:relative;right:298px; transition: right 300ms ease;}
 
 /* .hide-left:hover, .hide-right:hover{
     left:0;

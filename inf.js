@@ -175,8 +175,7 @@ jQuery(document).ready(function(){
             default:
             break
         }
-        boxTittle.removeClass('hide-'+side+'');
-        boxTittle.css('transform','translateX(0)');
+        boxTittle.css(''+side+'','0');
     },function(){
         var idBoxCircle = jQuery(this).attr('id');
         var boxTittle;
@@ -201,7 +200,7 @@ jQuery(document).ready(function(){
             default:
             break
         }
-        boxTittle.css('transform','translateX(400px)');
+        boxTittle.css(''+side+'','400px');
     })
     
 })
